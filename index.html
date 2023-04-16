@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="./css/styles.css">
 
     <title>Studio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
@@ -49,7 +51,7 @@
             <h1 class="caption "> Effective Solutions
                 for Your Business
             </h1>
-            <button type="button" class="btm">Order Service</button>
+            <button type="button" class="btm" data-modal-open>Order Service</button>
         </section>
 
         <!-- section two -->
@@ -272,35 +274,35 @@
                 <h2 class="tip-two">Customers</h2>
                 <ul class="customers-list list">
                     <li class="customers-item"><a href="" class="customers-link link">
-                        <svg class="customers-icon" width="104" height="56">
-                            <use href="./images/icons-3.svg#icon-Logo"></use>
-                        </svg>
-                    </a></li>
+                            <svg class="customers-icon" width="104" height="56">
+                                <use href="./images/icons-3.svg#icon-Logo"></use>
+                            </svg>
+                        </a></li>
                     <li class="customers-item"><a href="" class="customers-link link">
-                        <svg class="customers-icon" width="104" height="56">
-                            <use href="./images/icons-3.svg#icon-Logo-2"></use>
-                        </svg>
-                    </a></li>
+                            <svg class="customers-icon" width="104" height="56">
+                                <use href="./images/icons-3.svg#icon-Logo-2"></use>
+                            </svg>
+                        </a></li>
                     <li class="customers-item"><a href="" class="customers-link link">
-                        <svg class="customers-icon" width="104" height="56">
-                            <use href="./images/icons-3.svg#icon-Logo-3"></use>
-                        </svg>
-                    </a></li>
+                            <svg class="customers-icon" width="104" height="56">
+                                <use href="./images/icons-3.svg#icon-Logo-3"></use>
+                            </svg>
+                        </a></li>
                     <li class="customers-item"><a href="" class="customers-link link">
-                        <svg class="customers-icon" width="104" height="56">
-                            <use href="./images/icons-3.svg#icon-Logo-4"></use>
-                        </svg>
-                    </a></li>
+                            <svg class="customers-icon" width="104" height="56">
+                                <use href="./images/icons-3.svg#icon-Logo-4"></use>
+                            </svg>
+                        </a></li>
                     <li class="customers-item"><a href="" class="customers-link link">
-                        <svg class="customers-icon" width="104" height="56">
-                            <use href="./images/icons-3.svg#icon-Logo-5"></use>
-                        </svg>
-                    </a></li>
+                            <svg class="customers-icon" width="104" height="56">
+                                <use href="./images/icons-3.svg#icon-Logo-5"></use>
+                            </svg>
+                        </a></li>
                     <li class="customers-item"><a href="" class="customers-link link">
-                        <svg class="customers-icon" width="104" height="56">
-                            <use href="./images/icons-3.svg#icon-Logo-6"></use>
-                        </svg>
-                    </a></li>
+                            <svg class="customers-icon" width="104" height="56">
+                                <use href="./images/icons-3.svg#icon-Logo-6"></use>
+                            </svg>
+                        </a></li>
                 </ul>
             </div>
         </section>
@@ -345,6 +347,22 @@
             </ul>
         </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-x-btn" data-modal-close>
+                <svg class="" width="8" height="8">
+                    <use href="./images/x-mark.svg#icon-close-black-18dp-2-1"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+<script src="./js/modal.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
